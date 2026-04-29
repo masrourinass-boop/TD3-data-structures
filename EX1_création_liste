@@ -1,0 +1,11 @@
+typedef struct Element {
+    int val;
+    struct Element *suivant;
+} LISTE;
+
+LISTE *InsererTete(LISTE *L, int v) {
+    LISTE *n = malloc(sizeof(LISTE));
+    n->val = v;
+    n->suivant = L;
+    return n;
+}
