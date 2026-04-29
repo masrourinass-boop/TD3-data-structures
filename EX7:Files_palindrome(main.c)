@@ -1,0 +1,22 @@
+typedef struct queue_node {
+    char val;
+    struct queue_node *next;
+} NODE;
+
+typedef struct {
+    NODE *first, *last;
+} QUEUE;
+
+/* enqueue */
+void enqueue(QUEUE *q, char v) {
+    NODE *n = malloc(sizeof(NODE));
+    n->val = v;
+    n->next = NULL;
+
+    if (!q->first)
+        q->first = q->last = n;
+    else {
+        q->last->next = n;
+        q->last = n;
+    }
+}
