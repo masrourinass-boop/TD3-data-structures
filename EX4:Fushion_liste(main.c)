@@ -1,0 +1,15 @@
+LISTE *Fusion(LISTE *A, LISTE *B) {
+    LISTE *C = NULL;
+
+    while (A && B) {
+        C = InsererFin(C, A->val);
+        C = InsererFin(C, B->val);
+        A = A->suivant;
+        B = B->suivant;
+    }
+
+    while (A) { C = InsererFin(C, A->val); A = A->suivant; }
+    while (B) { C = InsererFin(C, B->val); B = B->suivant; }
+
+    return C;
+}
