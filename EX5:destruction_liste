@@ -1,0 +1,8 @@
+void detruire(LISTE **L) {
+    LISTE *tmp;
+    while (*L) {
+        tmp = *L;
+        *L = (*L)->suivant;
+        free(tmp);
+    }
+}
