@@ -1,0 +1,3 @@
+-Objectif:Fusionner deux listes de maniére alternée
+-Méthode: On parcourt les deux listes simultanément et on ajoute chaque élément a une nouvelle liste L3
+-Complexité:O(n+m) ou n et m sont la longueur des deux listes
