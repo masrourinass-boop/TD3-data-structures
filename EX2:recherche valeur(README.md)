@@ -1,0 +1,2 @@
+-Objectif: vérifier l'existente d'une valeur dans la liste 
+-Complexité:O(n) car il faut parfois parcourir toute la liste 
