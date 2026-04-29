@@ -1,0 +1,21 @@
+typedef struct Stack {
+    int val;
+    struct Stack *next;
+} STACK;
+
+/* push */
+void push(STACK **p, int v) {
+    STACK *n = malloc(sizeof(STACK));
+    n->val = v;
+    n->next = *p;
+    *p = n;
+}
+
+/* pop */
+int pop(STACK **p) {
+    STACK *tmp = *p;
+    int v = tmp->val;
+    *p = tmp->next;
+    free(tmp);
+    return v;
+}
