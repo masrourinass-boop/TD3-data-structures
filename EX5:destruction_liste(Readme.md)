@@ -1,0 +1,2 @@
+-Objectif:Libérer toute la mémoire occupée par une liste 
+_Importance:Cette fonction est cruciale pour éviter les memory leaks dans les systéme et les réseaux
