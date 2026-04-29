@@ -1,0 +1,7 @@
+int Rechercher(LISTE *L, int x) {
+    while (L != NULL) {
+        if (L->val == x) return 1;
+        L = L->suivant;
+    }
+    return 0;
+}
